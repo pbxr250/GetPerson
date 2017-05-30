@@ -42,7 +42,7 @@
   },
   "files": {
     "loopback#static": {
-      "params": "$!../client/openui5-sample-app-my/"
+      "params": "$!../client/"
     }
   },
   "final": {

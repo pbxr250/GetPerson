@@ -7,18 +7,47 @@
     "validateUpsert": true
   },
   "properties": {
-    "firstname": {
-      "type": "string",
-      "required": true
+    "LastName": {
+      "type": "string"
     },  
-    "lastname": {
+    "FirstName": {
+      "type": "string"
+    },  
+    "Title": {
       "type": "string"
     },
-    "gender": {
+    "BirthDate": {
       "type": "string"
     },
-    "age": {
-      "type": "Number"
+    "HireDate": {
+      "type": "string"
+    },  
+    "Address": {
+      "type": "string"
+    },  
+    "City": {
+      "type": "string"
+    },
+    "Region": {
+      "type": "string"
+    },
+    "PostalCode": {
+      "type": "string"
+    },  
+    "Country": {
+      "type": "string"
+    },
+    "HomePhone": {
+      "type": "string"
+    },
+    "Mobile": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },  
+    "Notes": {
+      "type": "string"
     }
   },
   "validations": [],

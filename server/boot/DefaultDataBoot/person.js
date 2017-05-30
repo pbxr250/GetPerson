@@ -5,7 +5,7 @@ module.exports = function (app, callback) {
 		app.dataSources.db.automigrate('Person', function(err) {
 			if (err) throw err;
 			var mdPerson = app.models.Person;
-			var fData = fs.readFileSync('storage/DefaultData/people.json', 'utf8');
+			var fData = fs.readFileSync('storage/DefaultData/new_people.json', 'utf8');
 			var aPeople = JSON.parse(fData);
 
 			mdPerson.create(aPeople, function (err, model) {
