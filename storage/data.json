@@ -1,0 +1,30 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Person": 12
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Person": {
+      "1": "{\"firstname\":\"Nadine\",\"lastname\":\"Meier\",\"gender\":null,\"age\":null,\"id\":1}",
+      "2": "{\"firstname\":\"Helmut\",\"lastname\":\"Tammen\",\"gender\":null,\"age\":null,\"id\":2}",
+      "3": "{\"firstname\":\"Franz\",\"lastname\":\"Frosch\",\"gender\":\"male\",\"age\":65,\"id\":3}",
+      "4": "{\"firstname\":\"Mausi\",\"lastname\":\"Schatz\",\"gender\":\"female\",\"age\":99,\"id\":4}",
+      "5": "{\"firstname\":\"Peter\",\"lastname\":\"Friday\",\"gender\":null,\"age\":null,\"id\":5}",
+      "6": "{\"firstname\":\"Johannes\",\"lastname\":\"Hamel\",\"gender\":null,\"age\":null,\"id\":6}",
+      "7": "{\"firstname\":\"Marty\",\"lastname\":\"Feldman\",\"gender\":null,\"age\":32,\"id\":7}",
+      "8": "{\"firstname\":\"Hermine\",\"lastname\":\"Hastenichgesehen\",\"gender\":null,\"age\":22,\"id\":8}",
+      "9": "{\"firstname\":\"Tim\",\"lastname\":\"Wiese\",\"gender\":null,\"age\":null,\"id\":9}",
+      "10": "{\"firstname\":\"Martin\",\"lastname\":\"Meier\",\"gender\":\"male\",\"age\":25,\"id\":10}",
+      "11": "{\"firstname\":\"Karla\",\"lastname\":\"Klar\",\"gender\":\"female\",\"age\":63,\"id\":11}"
+    }
+  }
+}
