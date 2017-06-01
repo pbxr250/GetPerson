@@ -1,0 +1,123 @@
+{
+    "_version": "1.1.0",
+    "sap.app": {
+        "_version": "1.1.0",
+        "id": "staffwatch.webapp",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "dataSources": {}
+        },
+     "sap.ui": {
+            "_version": "1.1.0",
+            "technology": "UI5",
+            "icons": {
+                "icon": "sap-icon://task",
+                "favIcon": "sap-icon://task",
+                "phone": "",
+                "phone@2": "",
+                "tablet": "",
+                "tablet@2": ""
+            },
+            "deviceTypes": {
+                "desktop": true,
+                "tablet": true,
+                "phone": true
+            },
+            "supportedThemes": [
+                "sap_hcb",
+                "sap_bluecrystal"
+            ]
+        },
+        "sap.ui5": {
+            "_version": "1.1.0",
+            "rootView": "staffwatch.webapp.view.App",
+            "dependencies": {
+                "minUI5Version": "1.30.0",
+                "libs": {
+                    "sap.ui.core": {},
+                    "sap.m": {},
+                    "sap.ui.layout": {}
+                }
+            },
+            "contentDensities": {
+                "compact": true,
+                "cozy": true
+            },
+            "models": {
+                "i18n": {
+                    "type": "sap.ui.model.resource.ResourceModel",
+                    "settings": {
+                        "bundleName": "staffwatch.webapp.i18n.i18n"
+                    }
+                },
+                "mdPeopleList": {
+                    "type": "sap.ui.model.json.JSONModel",
+                    "settings": "http://127.0.0.1:3000/api/People"
+                }
+            },
+            "routing": {
+                "config": {
+                    "routerClass": "sap.m.routing.Router",
+                    "viewType": "XML",
+                    "viewPath": "staffwatch.webapp.view",
+                    "controlId": "splitApp",
+                    "bypassed": {
+                        "target": ["tMasterMain", "notFound"]
+                    }
+                },
+                "routes": [
+                    {
+                        "pattern": "",
+                        "name": "home",
+                        "target": ["tMasterMain", "tDetailMain"]
+                    },
+                    {
+                        "pattern": "People",
+                        "name": "list_people",
+                        "target": ["tPeopleList", "tDetailMain"]
+                    },
+                    {
+                        "pattern": "People/{personId}",
+                        "name": "show_person",
+                        "target": ["tPeopleList", "tPersonInfo"]
+                    },
+                    {
+                        "pattern": "About",
+                        "name": "show_about",
+                        "target": ["tMasterMain", "tAbout"]
+                    }
+                ],
+                "targets": {
+                    "tMasterMain": {
+                        "viewName": "MasterMain",
+                        "controlAggregation": "masterPages"
+                    },
+                    "tDetailMain": {
+                        "viewName": "DetailMain",
+                        "controlAggregation": "detailPages"
+                    },
+                    "tPeopleList": {
+                        "viewName": "MasterPages.PeopleList",
+                        "controlAggregation": "masterPages"
+                    },
+                    "tPersonInfo": {
+                        "viewName": "DetailPages.PersonInfo",
+                        "controlAggregation": "detailPages"
+                    },
+                    "tAbout": {
+                        "viewName": "DetailPages.About",
+                        "controlAggregation": "detailPages"
+                    },
+                    "notFound": {
+                        "viewName": "NotFound",
+                        "controlAggregation": "detailPages"
+                    }
+                }
+            }
+        }
+}

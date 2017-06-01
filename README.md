@@ -13,6 +13,6 @@ npm install
 ```sh
 node .
 ```
-- Open http://127.0.0.1:3000/webapp/ in browser
+- Open http://127.0.0.1:3000/Staffwatch/webapp/ in browser
 
 

@@ -23,6 +23,9 @@
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
+    "grunt": "^1.0.1",
+    "grunt-debug-task": "^0.1.8",
+    "grunt-openui5": "^0.12.0",
     "nsp": "^2.1.0"
   },
   "repository": {

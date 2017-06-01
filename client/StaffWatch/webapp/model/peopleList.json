@@ -1,0 +1,62 @@
+{
+	"@odata.context": "http://services.odata.org/V4/Northwind/Northwind.svc/$metadata#Employees(FirstName,LastName,Title)",
+	"value": [{
+		"id":"0",
+		"LastName": "Davolio",
+		"FirstName": "Nancy",
+		"Title": "Sales Representative",
+		"TitleOfCourtesy": "Ms.",
+		"BirthDate": "1948-12-08T00:00:00Z",
+		"HireDate": "1992-05-01T00:00:00Z",
+		"Address": "507 - 20th Ave. E.Apt. 2A",
+		"City": "Seattle",
+		"Region": "WA",
+		"PostalCode": "98122",
+		"Country": "USA",
+		"HomePhone": "(206) 555-9857",
+		"Mobile" : "+33 6 4512 5158",
+		"Email" : "N.Davolio@sap.com",
+		"ReportsTo": 2,
+		"Notes": "Education includes a BA in psychology from Colorado State University in 1970.  She also completed \"The Art of the Cold Call.\"  Nancy is a member of Toastmasters International."
+	}, {
+		"id":"1",
+		"LastName": "Fuller",
+		"FirstName": "Andrew",
+		"Title": "Vice President, Sales"
+	}, {
+		"id":"2",
+		"LastName": "Leverling",
+		"FirstName": "Janet",
+		"Title": "Sales Representative"
+	}, {
+		"id":"3",
+		"LastName": "Peacock",
+		"FirstName": "Margaret",
+		"Title": "Sales Representative"
+	}, {
+		"id":"4",
+		"LastName": "Buchanan",
+		"FirstName": "Steven",
+		"Title": "Sales Manager"
+	}, {
+		"id":"5",
+		"LastName": "Suyama",
+		"FirstName": "Michael",
+		"Title": "Sales Representative"
+	}, {
+		"id":"6",
+		"LastName": "King",
+		"FirstName": "Robert",
+		"Title": "Sales Representative"
+	}, {
+		"id":"7",
+		"LastName": "Callahan",
+		"FirstName": "Laura",
+		"Title": "Inside Sales Coordinator"
+	}, {
+		"id":"8",
+		"LastName": "Dodsworth",
+		"FirstName": "Anne",
+		"Title": "Sales Representative"
+	}]
+}

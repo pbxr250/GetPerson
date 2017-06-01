@@ -1,0 +1,1 @@
+http://services.odata.org/V4/Northwind/Northwind.svc/Employees?$select=FirstName, LastName, Title
